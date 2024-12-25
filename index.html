@@ -23,9 +23,8 @@
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>🌦 WeatherGS: 3D Scene Reconstruction in Adverse Weather Conditions via Gaussian Splatting</title>
 
-  <title>WeatherGS: 3D Scene Reconstruction in Adverse Weather Conditions
-    via Gaussian Splatting</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -46,14 +45,25 @@
   <script src="static/js/index.js"></script>
 </head>
 <body>
+  <style>
+    .section-heading {
+      text-align: center;
+      margin: 2rem 0;
+    }
 
+    .heading-dataset {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
 
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-3 publication-title">WeatherGS: 3D Scene Reconstruction in Adverse Weather Conditions via Gaussian Splatting</h1>
+            <h1 class="title is-3 publication-title">🌦<span style="color: #3498db; font-weight: bold;">Weather</span><span style="color: #e74c3c; font-weight: bold;">GS</span>: 3D Scene Reconstruction in Adverse Weather Conditions via Gaussian Splatting</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">Chenghao Qian<sup>1*</sup>,</span>
@@ -86,16 +96,17 @@
               <span>Code</span>
               </a>
             </span>
+  
     <!-- Dataset link -->
-                  <!-- <span class="link-block">
+                  <span class="link-block">
                     <a href="https://your-dataset-link.com" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-database"></i>
                     </span>
-                    <span>Dataset</span>
+                    <span>Dataset (Coming soon)</span>
                     </a>
-                  </span> -->
+                  </span>
 
 
                                       <!-- Arxiv PDF link -->
@@ -142,17 +153,28 @@
 </section>
 
 
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <!-- Your image here -->
-      <img src="static/images/intro1.jpg" alt="MY ALT TEXT" style="width: 60%; height: auto;">
-      <h2 class="subtitle">
-        Rendering examples in adverse weather conditions using NeRF, 3DGS, and WeatherGS.
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- <h2 class="subtitle has-text-centered" ;">
+        Can advanced 3D reconstruction models excel in adverse weather conditions?
+      </h2> -->
+      <h2 class="subtitle has-text-centered">
+        Can <span style="color: #e74c3c; font-weight: bold;">3D reconstruction models</span> works in <span style="color: #3498db; font-weight: bold;animation: fadeIn 6s">adverse weather conditions</span>?
       </h2>
+      <style>
+      @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      </style>
+      <img src="static/images/1.gif" alt="WeatherGS Animation" style="height: 100%; display: block; margin: 0 auto;">
+
     </div>
   </div>
 </section>
+
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -170,8 +192,66 @@
   </div>
 </section>
 <!-- End paper abstract -->
+<div style="text-align: center;">
+  <h2 class="title is-3"><span style="color: #e74c3c; font-weight: bold;">1.Problems</span></h2>
+</div>
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <!-- Your image here -->
+      <img src="static/images/2.gif" alt="MY ALT TEXT" style="width: 60%; height: auto;">
+      <h2 class="subtitle">
+        Reconstructed scene in snowy weather using NeRF and 3DGS.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <!-- Your image here -->
+      <img src="static/images/intro1.jpg" alt="MY ALT TEXT" style="width: 60%; height: auto;">
+      <h2 class="subtitle">
+        Rendering examples in adverse weather conditions using NeRF, 3DGS, and WeatherGS.
+      </h2>
+    </div>
+  </div>
+</section>
 
 
+<div style="text-align: center;">
+  <h2 class="title is-3"><span style="color: #e74c3c; font-weight: bold;">2.Dataset Construction</span></h2>
+</div>
+<section class="hero is-small">
+
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <!-- Your image here -->
+       
+      <img src="static/images/intro2.png" alt="MY ALT TEXT" style="width: 60%; height: auto;">
+
+    </div>
+  </div>
+</section>
+<div style="text-align: center;">
+  <h2 class="title is-3"><span style="color: #e74c3c; font-weight: bold;">3.Method Pipeline</span></h2>
+</div>
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <!-- Your image here -->
+      <img src="static/images/intro3.png" alt="MY ALT TEXT" style="width: 60%; height: auto;">
+      <h2 class="subtitle">
+        Rendering examples in adverse weather conditions using NeRF, 3DGS, and WeatherGS.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<div style="text-align: center;">
+  <h2 class="title is-3"><span style="color: #e74c3c; font-weight: bold;">4.Final Results</span></h2>
+</div>
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
@@ -186,6 +266,8 @@
     </div>
   </div>
 </section>
+
+
 <!-- End teaser video -->
 <!-- Image carousel -->
 
